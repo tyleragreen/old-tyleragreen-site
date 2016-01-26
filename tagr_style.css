@@ -246,8 +246,11 @@ footer a:hover {
 /* MODAL */
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 800px;
+    width: 720px;
   }
+}
+.modal-image-container {
+  text-align: center;
 }
 .modal-header {
   border-bottom: 0px;
@@ -255,10 +258,18 @@ footer a:hover {
 .modal-footer {
   border-top: 0px;
 }
-.modal-image {
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 5px;
+@media (min-width: 768px) {
+  .modal-image {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .modal-image {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 .modal-thumb {
   width: 100%;

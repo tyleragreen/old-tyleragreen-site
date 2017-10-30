@@ -11,8 +11,8 @@
     <meta name="author" content="Tyler A. Green">
     <meta name="contact" content="greent@tyleragreen.com" />
     <meta name="copyright" content="Copyright (c)2017 Tyler A. Green. All Rights Reserved." />
-    <meta name="description" content="Tyler A. Green is a public transit enthusiast, urban adventurer, and stadium fanatic located in Brooklyn, New York. In between riding buses to work and play, he likes to develop software, tweet about buses, drink coffee, and watch Kentucky basketball. Say hello next time you see him on a rail near you!" />
-    <meta name="keywords" content="tyler a green, transit, public transit, transportation, cities, urban, buses, subways, light rail, blog, colorado" />
+    <meta name="description" content="Tyler A. Green is a public transit enthusiast, urban adventurer, and stadium fanatic located in Brooklyn, New York. In between riding transit for work and play, he likes to develop software, tweet about buses, drink coffee, and watch Kentucky basketball. Say hello next time you see him on a rail near you!" />
+    <meta name="keywords" content="tyler a green, transit, public transit, transportation, cities, urban, buses, subways, light rail, blog, colorado, brooklyn" />
     <link rel="icon" href="favicon.ico">
 
     <title>Tyler A. Green, Public Transit Enthusiast</title>
@@ -185,6 +185,16 @@
         <div class="col-md-12">
           <h2 class="featurette-heading">Projects. <span class="text-muted">See what I'm working on.</span></h2>
           <p class="lead">Click on each project to learn more!</p>
+          
+          <div class="col-md-4 col-sm-6 thumb-col">
+            <a href="#projects" class="thumbnail"><img class="modal-thumb" src="http://www.tyleragreen.com/blog_files/2017-10-fares/fare_chart.png" alt="MTA Fares" data-toggle="modal" data-target="#modalFares" /></a>
+          </div>
+          <div class="col-md-4 col-sm-6 thumb-col">
+            <a href="#projects" class="thumbnail"><img class="modal-thumb" src="http://www.tyleragreen.com/blog_files/2017-03-gtfs-graph-centrality/page_rank1.png" alt="Transit Network Centrality" data-toggle="modal" data-target="#modalGraphCentrality" /></a>
+          </div>
+          <div class="col-md-4 col-sm-6 thumb-col">
+            <a href="#projects" class="thumbnail"><img class="modal-thumb" src="http://www.tyleragreen.com/blog_files/2016-10-gtfs-graph/bfs2.png" alt="Graphing Transit Networks" data-toggle="modal" data-target="#modalGraphAlgorithms" /></a>
+          </div>
           <div class="col-md-4 col-sm-6 thumb-col">
             <a href="#projects" class="thumbnail"><img class="modal-thumb" src="images/modals/boston_thumb.png" alt="Boston Realtime Map" data-toggle="modal" data-target="#modalBoston" /></a>
           </div>
@@ -202,6 +212,69 @@
           </div>
           <div class="col-md-4 col-sm-6 thumb-col">
             <a href="#projects" class="thumbnail"><img class="modal-thumb" src="images/modals/sf_thumb.JPG" alt="Stadium Fanatic Social Network" data-toggle="modal" data-target="#modalStadiumFanatic" /></a>
+          </div>
+          
+          <!-- Graph Centrality Modal -->
+          <div class="modal fade" id="modalFares" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h3 class="modal-title" id="myModalLabel">History of MTA Fares</h3>
+                </div>
+                <div class="modal-body">
+                  <p><b>Date: </b>September 2017</p>
+		              <p>Being new to New York City, I decided to study the history of the MTA subway fare.</p>
+		              <p>I ended up collecting the New York Times articles from every fare increase since 1904 and writing up a summary of what I learned. Check out <a href="https://tyleragreen.gitbooks.io/history/timelines/fare-increases.html" target="_blank">my notes</a> and the <a href="http://www.tyleragreen.com/blog/2017/10/alls-fare-diving-into-mta-fares/" target="_blank">finished post</a>.</p>
+                  <div class="modal-image-container"><a href="http://www.tyleragreen.com/blog/2017/10/alls-fare-diving-into-mta-fares/" target="_blank"><img class="modal-image" src="http://www.tyleragreen.com/blog_files/2017-10-fares/fare_chart.png" alt="Transit Network Centrality" width="676" /></a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Graph Centrality Modal -->
+          <div class="modal fade" id="modalGraphCentrality" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h3 class="modal-title" id="myModalLabel">Transit Network Centrality</h3>
+                </div>
+                <div class="modal-body">
+                  <p><b>Date: </b>Fall 2016</p>
+		              <p>After implementing basic graph algorithms on the New York City subway network, I began exploring centrality metrics on the New York City, Boston, Paris, and Washington, DC, subway networks. This lets us see what are the most important stations in the network and compare network structure across cities.</p>
+		              <p>Check out my blog posts (<a href="http://www.tyleragreen.com/blog/2017/03/graphing-transit-systems-part-ii-centrality/" target="_blank">first</a> and <a href="http://www.tyleragreen.com/blog/2017/03/graphing-transit-systems-part-iii-centrality-extended/" target="_blank">second</a>) on the centrality adventure and check out the results in the <a href="https://gtfs-graph.herokuapp.com/" target="_blank">web app</a>.</p>
+                  <div class="modal-image-container"><a href="http://www.tyleragreen.com/blog/2017/03/graphing-transit-systems-part-ii-centrality/" target="_blank"><img class="modal-image" src="http://www.tyleragreen.com/blog_files/2017-03-gtfs-graph-centrality/page_rank1.png" alt="Transit Network Centrality" width="676" /></a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Graph Algorithms Modal -->
+          <div class="modal fade" id="modalGraphAlgorithms" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h3 class="modal-title" id="myModalLabel">Transit Network Graph Algorithms</h3>
+                </div>
+                <div class="modal-body">
+                  <p><b>Date: </b>Summer 2016</p>
+		              <p>While reviewing algorithms during a round of interview prep, I realized it would be fun to implement graph algorithms on a transit network!</p>
+		              <p>Check out my <a href="http://www.tyleragreen.com/blog/2016/10/graphing-transit-systems/" target="_blank">blog post</a> and <a href="https://gtfs-graph.herokuapp.com/demo/" target="_blank">web app</a> about depth-first search, breadth-first search, and Dijkstra's algorithms visualized on the New York City subway network.</p>
+                  <div class="modal-image-container"><a href="http://www.tyleragreen.com/blog/2016/10/graphing-transit-systems/" target="_blank"><img class="modal-image" src="http://www.tyleragreen.com/blog_files/2016-10-gtfs-graph/bfs2.png" alt="Transit Network Graph Algorithms" width="676" /></a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Boston Modal -->
